@@ -1,0 +1,914 @@
+﻿
+@font-face
+{
+    font-family:TableFont;
+    src:url('fonts/SHOWG.ttf');
+    
+}
+@font-face
+{
+    font-family:TitleFont;
+    src:url('fonts/BRLNSDB.ttf');
+}
+@font-face
+{
+    font-family:FooterMenu;
+    src:url("fonts/stylo_.ttf");
+}
+
+@font-face
+{
+    font-family:Footer;
+    src:url("fonts/ARLRDBD.ttf");
+}
+@font-face
+{
+    font-family:About;
+    src:url("fonts/times.ttf");
+}
+
+@font-face
+{
+    font-family:comic;
+    src:url("fonts/comic.ttf");
+}
+
+@font-face
+{
+    font-family:btahoma;
+    src:url("fonts/BTAHMABD.ttf");
+}
+
+
+@font-face
+{
+    font-family:vijayab;
+    src:url("fonts/vijayab.ttf");
+}
+/*******************right friend list*******************/
+
+#friends-list
+{
+    width:202px;
+    height:322px;
+    float:right;
+    margin-right:15px;
+    margin-top:80px;
+    margin-bottom:60px;
+}
+#friends-table img
+{
+    width:24px;
+    height:27px;
+    background-color:Black;
+	margin-top:-8px;
+}
+#friends-table p
+{
+	font-family:Footer;
+	font-weight:bold;
+	font-size:16px;
+	color:#61676c;
+	cursor:pointer;
+	margin-left:5px;
+	margin-top:10px;
+}
+#friendsbody
+{
+    width:202px;
+    height:322px;
+    overflow:auto;
+}
+
+#friendsbody h2
+{
+	margin-left:46px;
+	margin-top:-10px;
+	color:#9bb610;
+	padding-top:30px;
+	text-decoration:none;
+	font-family:TitleFont;
+	font-size:32px;
+}
+
+
+
+/**************** post body and menu ***************/
+
+.Menus
+{
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    background-color:#f1f1f1;
+    border:4px solid white;
+}
+
+#chatbody h3{
+
+	font-family:vijayab;
+	font-size:27px;
+margin-left:30px;color:#ff9000;
+padding-top:20px;text-decoration:underline;
+}
+
+
+#chat-menu
+{
+    width:144px;
+    height:37px;
+    position:relative;
+    top:-27px;
+    left:25px;
+}
+
+#chatmenu
+{
+
+    z-index:3;
+	float:right;
+    text-align:center;
+    width:127px;
+    height:38px;
+    position:relative;
+    top:-8px;
+    right:175px;
+}
+
+#chatmenu img{
+    position:relative;
+    top:8px;
+    cursor:pointer;
+    margin-left:5px;
+	
+	
+}
+#chatmenu2
+{
+    z-index:3;
+    float:right;
+    text-align:center;
+    width:145px;
+    height:38px;
+    position:relative;
+    top:-30px;
+    left:-30px;
+	
+}
+#setting{
+
+    position:relative;
+     top:-22px;
+    cursor:pointer;
+	width:26px;
+    height:25px;
+    left:52px;  
+
+}
+#PersonName
+{
+	font-family:vijayab;
+	font-size:22px;
+	color:#61676c;
+    height:30px;
+    width:50px;
+    position:relative;
+    top:-22px;
+    left:48px;
+}
+#shape{
+    width:24px;
+    height:27px;
+    position:relative;
+    top:8px;
+    left:15px;
+    cursor:pointer;
+	float:left;
+
+}
+
+#chat-list
+{
+    width:202px;
+    height:322px;
+    float:right;
+    margin-top:10px;
+    margin-right:15px;
+    margin-bottom:60px;
+}
+
+#chatbody
+{
+    width:202px;
+    height:322px;
+    overflow:auto;
+	
+}
+
+
+
+#chat-table p{
+
+	font-family:Footer;
+	font-weight:bold;
+	font-size:16px;
+	color:#61676c;
+	cursor:pointer;
+	margin-left:5px;
+}
+#chat-table img{
+
+	margin-left:4px;
+	margin-top:-20px;
+}
+
+#share-chat
+{
+   width:545px;
+   float:left;
+   margin-top:30px;
+   margin-left:30px;
+    
+}
+/*
+ #shareBlock{
+	background-color:#f2f8fd;
+	height:200px;
+}
+*/
+
+/* css codes for share part */
+.border-in{
+	-webkit-box-shadow: inset 5px 0px 40px 5px rgba(0, 0, 0, .5);
+	box-shadow: inset 5px 0px 20px 5px rgba(0, 0, 0, .5);
+}
+.border-out
+{
+    border:25px solid #d5e8e9;
+	-webkit-box-shadow: 0px 30px 30px -10px rgba(0, 0, 0, .3);
+    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, .3);
+    -webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+/****************/
+
+
+
+/**********************************/
+
+
+#seprator
+{
+    height:9px;
+    width:500px;
+    background-image:url('images/seprator.png');
+    background-repeat:repeat-x;
+    border-radius:80px;
+    margin-left:25px;
+    margin-top:10px;
+}
+
+
+/********************post body *************/
+
+
+#recent-post{
+
+	margin-left:20px;
+}
+#chat
+{
+    margin-left:-20px;
+    width:495px;
+    height:320px;
+    margin-top: 50px;
+   
+}
+
+
+
+#chat-body
+{
+    width:495px;
+    height:320px;
+    text-align:center;
+
+}
+#postproperty{
+	float:right;
+	margin-top:-22px;
+	margin-right:120px;
+}
+
+
+
+/*************/
+
+
+/**************/
+.tables
+{
+    position:relative;
+    top:20px;
+    text-align:center;
+    left:20px;
+}
+#friends-count
+{
+    position:relative;
+    top:10px;
+    left:25px;
+	font-family:TitleFont;;
+	font-size:14px;
+
+}
+
+/************ green btn ***************/
+#morepost{
+
+	margin-top:-15px;
+	margin-left:15px;
+	margin-bottom:40px;
+}
+#greenBtn{
+	cursor:pointer;
+	background-image:url('images/greenbtn.png');
+    width:130px;
+    height:40px;
+	margin-left:-6px;
+
+}
+#greenBtn img{
+	width:25px;
+    	height:18px;
+	float:right;
+	margin-top:8px;
+margin-right:11px;
+}
+#greenBtn p{
+	font-family:comic;
+	color:#404447;
+	float:left;
+	margin-left:24px;
+	margin-top:6px;
+}
+.greenline{
+	width:130px;
+    height:9px;
+    background-image:url('images/seprator.png');
+    background-repeat:repeat-x;
+    border-radius:80px;
+}
+#leftLine{
+	float:left;
+	margin-left:25px;
+	margin-top:15px;
+
+}
+#rightLine{
+	float:right;
+	margin-right:32px;
+	margin-top:-25px;
+}
+
+/****************Search************************/
+
+
+
+
+#search-table{
+	position:relative;
+	float:left;
+	margin-top:0px;
+	text-align:left;
+	margin-left:50px;
+	width:380px;
+	font-family:TableFont;
+	font-size:15px;
+	color:#676d72;
+}
+#checkBox{
+	position:relative;
+	width:380px;
+	font-family:TableFont;
+	font-size:15px;
+	color:#676d72;
+	text-align:left;
+	margin-left:80px;
+	float:left;
+	
+}
+
+#searchBox-ID{
+
+	height:90px;
+	float:left;
+	margin-top:20px;
+	margin-left:15px;
+
+}
+#searchBox-ID h1{
+
+	
+	position:relative;
+	margin-left:200px;
+	margin-top:-27px;
+	font-family:TitleFont;
+	font-size:40px;
+	color:#4b5054;
+
+}
+#searchBox-ID img{
+
+	cursor:pointer;
+    width:120px;
+    height:144px;
+
+    border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 10px 1px gray;
+    z-index:1;
+    background-color:White;
+	float:left;
+	position:relative;
+	margin-left:35px;
+	margin-top:-150px;
+
+}
+
+#Inboxsep{
+    width:545px;
+    height:28px;
+    margin-top:100px;
+	margin-bottom:20px;
+
+}
+
+#recieved-message{
+	position:relative;
+	margin-top:0px;
+	height:500px;
+	/***margin-bottom:400px;***/
+
+}
+#sent-block{
+	margin-top:-70px;
+	margin-bottom:100px;
+
+}
+
+
+/**************Person*******************/
+
+#person-photo{
+	cursor:pointer;
+    width:80px;
+    height:80px;
+
+    border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 10px 1px gray;
+    z-index:1;
+    background-color:White;
+	float:left;
+	position:relative;
+
+}
+#person-info
+{
+	text-align:left;
+	float:left;
+	margin-left:20px;
+	position:relative;
+	margin-top:17px;
+}
+
+#person-Name
+{
+
+	font-family:About;
+	margin-bottom:0px;
+	font-size:28px;
+	color:#70767c;
+	height:22px;
+
+}
+
+
+
+#person-Type
+{
+
+	font-family:About;
+	font-size:18px;
+	color:#efa200;
+	margin-top:5px;
+
+}
+
+/**********************Organization********************/
+
+
+#Org-photo{
+	cursor:pointer;
+    width:80px;
+    height:80px;
+
+    border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 10px 1px gray;
+    z-index:1;
+    background-color:White;
+	float:left;
+	position:relative;
+
+}
+#Org-info
+{
+	text-align:left;
+	float:left;
+	margin-left:20px;
+	position:relative;
+	margin-top:24px;
+}
+
+#Org-Name
+{
+
+	font-family:About;
+	margin-bottom:0px;
+	font-size:28px;
+	color:#70767c;
+	height:22px;
+
+}
+
+
+
+#Org-Type
+{
+
+	font-family:About;
+	font-size:18px;
+	color:#efa200;
+	margin-top:5px;
+
+}
+
+/***********************User Type *********************/
+
+#Use-photo{
+	cursor:pointer;
+    width:80px;
+    height:80px;
+
+    border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 10px 1px gray;
+    z-index:1;
+    background-color:White;
+	float:left;
+	position:relative;
+
+}
+#Use-info
+{
+	text-align:left;
+	float:left;
+	margin-left:20px;
+	position:relative;
+	margin-top:17px;
+}
+
+#Use-Name
+{
+
+	font-family:About;
+	margin-bottom:0px;
+	font-size:28px;
+	color:#70767c;
+	height:22px;
+
+}
+
+
+
+#Use-Type
+{
+
+	font-family:About;
+	font-size:18px;
+	color:#efa200;
+	margin-top:5px;
+
+}
+
+/******************************************/
+
+
+
+/******************* result posts******************/
+
+.postS{
+	margin-top:40px;
+}
+#share1
+{
+	
+    position:relative;
+    top:0px;
+    overflow:auto;
+	height:142px;
+	float:left;
+	width:493px;
+}
+
+
+#share-background
+{
+    overflow:auto;
+}
+#share-body
+{
+	padding-left:30px;
+	padding-top:22px;
+    position:relative;
+    float:left;
+    right:5px;
+    width:360px;
+    text-align:center;
+    height:120px;
+    overflow:auto;  
+}
+
+
+/**************************************/
+#reply1{
+
+	margin-top:-49px;
+	margin-right:145px;
+	z-index:5;
+	position:relative;
+	float:right;
+	height:20px;
+}
+
+#reply{
+
+	margin-top:-23px;
+	margin-right:20px;
+	z-index:5;
+	position:relative;
+	float:right;
+	height:20px;
+}
+.orangebtn{
+
+    width:125px;
+    height:40px;
+
+    padding-right:7px;
+	padding-top:0px;
+    float:right;
+	background-image:url('images/orangeBtn.png');
+	
+
+}
+#reply-btn p{
+	font-family:TableFont;
+	
+	font-size:18px;
+	color:#3b3f43;
+	float:right;
+	margin-right:17px;
+	margin-top:8px;
+}
+
+#reply-btn img {
+
+	float:left;
+	margin-left:15px;
+	margin-top:5px;
+}
+/************************************/
+#delete{
+
+	margin-top:-19px;
+	margin-left:52px;
+	z-index:5;
+	position:relative;
+	float:left;
+	height:20px;
+	margin-bottom:120px;
+}
+#delete1{
+
+	margin-top:-48px;
+	margin-right:12px;
+	z-index:5;
+	position:relative;
+	float:right;
+	height:20px;
+}
+#delete2{
+
+	margin-top:-23px;
+	margin-right:12px;
+	z-index:5;
+	position:relative;
+	float:right;
+	height:20px;
+}
+
+.greenbtn{
+
+    width:125px;
+    height:40px;
+
+    padding-right:7px;
+	padding-top:0px;
+    float:right;
+	background-image:url('images/greenbtn.png');
+	
+
+}
+#delete-btn p{
+	font-family:TableFont;
+	
+	font-size:18px;
+	color:#3b3f43;
+	float:right;
+	margin-right:16px;
+	margin-top:8px;
+}
+
+#delete-btn img {
+
+	float:left;
+	margin-left:12px;
+	margin-top:4px;
+}
+/************************************/
+
+
+#send-report{
+	margin-top:-50px;
+	margin-right:12px;
+}
+
+
+#report-btn p{
+	font-family:TableFont;
+	
+	font-size:18px;
+	color:#3b3f43;
+	float:right;
+	margin-right:25px;
+	margin-top:8px;
+}
+
+#report-btn img {
+
+	float:left;
+	margin-left:17px;
+	margin-top:5px;
+}
+
+#messageField{
+
+	height:100px;
+}
+
+.ReportTxt{
+	color:White;
+	background-color:#676d72;
+}
+.messageTxt{
+	color:#788188;
+	background-color:white;
+
+}
+#messageField2{
+	border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 5px 1px gray;
+    
+	margin-top:20px;
+	height:150px;
+	width:350px;
+}
+#sendmField{
+	border:2px;
+    border-color:#798086;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 5px 1px gray;
+    
+	margin-top:30px;
+	height:200px;
+	width:350px;
+	float:left;
+	margin-left:40px;
+}
+#replyField{
+	margin-top:20px;
+	height:70px;
+	width:350px;
+}
+/**********************************************/
+
+
+
+
+#replyPost
+{
+	
+    position:relative;
+    top:0px;
+    overflow:auto;
+	height:442px;
+	float:left;
+	width:493px;
+	margin-top:30px;
+}
+
+
+#replyPost-background
+{
+    overflow:auto;
+}
+#replyPost-body
+{
+	padding-left:30px;
+	padding-top:22px;
+    position:relative;
+    float:left;
+    right:5px;
+    width:435px;
+    text-align:center;
+    height:420px;
+    overflow:auto;  
+}
+
+/***************************************/
+
+#sendPost
+{
+	
+    position:relative;
+    top:0px;
+    overflow:auto;
+	height:402px;
+	float:left;
+	width:493px;
+	margin-top:30px;
+	margin-bottom:100px;
+}
+
+
+#sendPost-background
+{
+    overflow:auto;
+}
+#sendPost-body
+{
+	padding-left:30px;
+	padding-top:22px;
+    position:relative;
+    float:left;
+    right:5px;
+    width:435px;
+    text-align:center;
+    height:380px;
+    overflow:auto;  
+}
+
+#txts{
+	float:left;
+}
+/**********************************************/
+
+#Person-block{
+
+	margin-top:-40px;
+}
+#Organization-block{
+	margin-top:-70px;
+	
+}
+#UserType-block{
+
+	margin-top:-70px;
+	
+}

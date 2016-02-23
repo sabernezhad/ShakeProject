@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <link rel=Stylesheet href=master.css type="text/css" />
+
+    <link rel=Stylesheet href=tables.css type="text/css" />
+ 
+    <link rel=Stylesheet href=css.css type="text/css" />
+
+    <script type="text/javascript" src=jquery.js></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			$('#chat-comment').hide();
+			
+			$('#signouttab').hover(
+			function(){$('#hometab').css('z-index','0').css;$(this).css('z-index','10').css('background-color','#EFF809');}
+			,function(){$('#hometab').css('z-index','2');$(this).css('z-index','0').css('background-color','#C6E132');}
+			);
+			$('#profiletab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','1').css('background-color','#C6E132');}
+			);
+			$('#hometab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','2').css('background-color','#C6E132');}
+			);
+		
+		});
+	</script>
+
+
+</head>
+<body>
+
+    <div id="main">
+
+
+				<!--************************* header ******************************-->
+
+	<div id="headerBack" ></div>
+        <div id="header"  >
+		
+	  <div class="shell" style="height:400px">
+ 	    <div id="tabs" style="margin-bottom:-100px;margin-right:-30px">
+                <div id="signouttab">
+                    <p>Sign Out</p>
+                </div>
+                
+                <div id="profiletab">
+                    <p>Profile</p>
+                </div>
+                <div id="hometab">
+                    <p>Home</p>
+                </div>
+             </div><!--end of tabs-->
+
+	    <div id="orangeLine">
+                <div id="logo"></div>
+
+            	<div id="header-search">
+                	<img src="images/search-corner.png" id="header-search-corner">
+               
+                	<input type=text id="header-search-text" value="Enter Search Here..." />
+                
+                	<img src="images/btn-search.png" title="Search" id="header-search-button">
+            	</div>
+           
+	     </div><!--end of orange line-->
+	   </div><!--end of shell div -->
+
+        </div><!--end of header-->
+
+				<!--************************* header ******************************-->
+
+	 <div   style="clear:both"></div>
+
+
+
+				<!--************************* Left Panels ******************************-->
+	<div id="panelss" class="shell">
+                 <div id="item1Panel" class="panel" style="background-image:url('images/panel-b.png');top:80px;"> <a href="#"><img style="margin-left:41px;margin-top:-15px;" src="images/messageBox.png" title="Message Box"/> </a></div>
+        <div id="item2Panel" class="panel" style="background-image:url('images/panel-r.png');top:100px;"> <a href="#"><img style="margin-left:39px;margin-top:-15px;" src="images/friends.png" title="Friends" /> </a> </div>
+        <div id="item3Panel" class="panel" style="background-image:url('images/panel-b.png');top:120px;"> <a href=""><img style="margin-left:42px;margin-top:-15px;" src="images/archive.png" title="Archive" /> </a></div>
+        <div id="item4Panel" class="panel" style="background-image:url('images/panel-r.png');top:140px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/forum.png" title="Forum" /> </a></div>
+	<div id="item5Panel" class="panel" style="background-image:url('images/panel-b.png');top:160px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/setting.png" title="Setting" />  </a></div> 
+	</div> <!--end of panelss-->
+
+
+				<!--************************* Left Panels ******************************-->
+
+ 	<div style="clear:both"></div>  
+
+
+
+				<!--************************* content ******************************-->
+
+	 <div id="content" class="shell">
+
+
+
+         <div id="profile-avatar" src="images/profile-avatar.jpg" alt="Profile Picture" ></div>
+           <img id="edit-coverPhoto" src="images/edit-icon.png" title="change photo" />
+	 <div id="PersonInfo">
+                <div id="PersonInfo-ID">FName LName</div>
+                <div id="PersonInfo-Status">
+                    <img id="PersonInfo-Status-Picture" src="images/PersonInfo-pic.png" />
+                    <div id="PersonInfo-Status-Text">Looking for job</div>
+                </div>
+               </div>
+
+
+
+					<!--**************************** share ******************************-->
+
+            <div id="share-chat">
+                 
+                    <img id="avatar"  src="images/avatar.png" />
+
+               <img id="edit-Photo" src="images/edit-icon.png" title="change photo" />
+
+                 
+                    <div id="Info">
+
+                  	  <div style="margin-left:30px;float:left;margin-top:10px;">
+				<b><span style="color:#b0ce08 ; margin-left:20px">Edit Profile</span></b>
+			    </div>
+
+                 	   <img src="images/arrowDown.png" alt="shift" title="Open" style="cursor:pointer;float:right;margin-top:17px;margin-right:37px;" />
+                   		
+				<div id="seprator">
+                    		</div>
+		    </div>
+
+                    
+                
+            </div><!--end of share-chat-->
+
+
+
+					<!--**************************** share ******************************-->
+
+
+
+					<!--************************* Information ******************************-->
+
+
+		<div id="Informations3">
+
+
+              <table id="looking-table1" class=table>
+                <tr>
+                    <td>FIRST NAME :</td>
+                    <td><input type=text id="FirstNameField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>LAST NAME :</td>
+                    <td><input type=text id="LastNameField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>BIRTHDAY :</td>
+                    <td><input type=text id="BirthdayField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>GENDER :</td>
+                    <td>
+                    <select id="gender" class=TextBox>
+                        <option>
+                            Male
+                        </option>
+                        <option>
+                            Female
+                        </option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TEL :</td>
+                    <td><input type=text id="TelField" class=TextBox /></td>
+                </tr>
+
+                <tr>
+                    <td>EDUCATION :</td>
+                    <td><select id="EduField" class=TextBox>
+                        <option>
+                            first
+                        </option>
+                        <option>
+                            second
+                        </option>
+                    </select>
+		    </td>
+                </tr>
+ 		<tr>
+                    <td>UNIVERSITY :</td>
+                    <td>          
+			<input type=text id="uniField" class=TextBox />
+		    </td>
+                </tr>
+ 		<tr>
+                    <td>UPLOAD :</td>
+                    <td><input type=text id="UpField" class=TextBox /></td>
+			<td> 
+			<img src="images/uploadIcon.png" alt="upload" title="Upload File" style="cursor:pointer;float:right;margin-top:-3px;margin-right:0px;" />
+		    </td>
+                </tr>
+		</table>
+
+		<table id="looking-table2" class=table>
+
+
+       		<tr>
+                    <td>HOMETOWN :</td>
+                    <td><input type=text id="homeField" class=TextBox /></td>
+                </tr>
+	 	<tr>
+                    <td>NATIONALITY :</td>
+                    <td><input type=text id="nationField" class=TextBox /></td>
+                </tr>
+        	 <tr>
+                    <td>EMAIL :</td>
+                    <td><input type=text id="EmailField" class=TextBox /></td>
+                </tr>
+		 <tr>
+                    <td>JOB :</td>
+                    <td><input type=text id="jobField" class=TextBox /></td>
+            
+                </tr>
+         
+               	 <tr>
+                    <td>BACKGROUND :</td>
+                    <td><input type=text id="backField" class=TextBox /></td>
+            
+                </tr>
+
+                <tr >
+                    <td>PROFIICIENCY :</td>
+                    <td><textarea id="proField" cols=20 rows=2 class=TextBox></textarea></td>
+                </tr>
+		
+             </table>
+	</div>	<!--end of Informations-->
+
+				<!--************************* Information ******************************-->
+
+				<!--************************* Done Button ******************************-->
+
+
+
+		<div id="morepost" align="center">
+				<div id="leftLine" class="greenline" ></div>
+				<a style="text-decoration:none;" href="#">
+				<div id="greenBtn">
+					<p> Done </p>
+					<img src="images/send-comment.png"/>
+				</div>
+				</a>
+				<div id="rightLine" class="greenline"></div>
+		</div>
+
+				<!--************************* Done Button ******************************-->
+          
+
+        </div><!--end of content-->
+
+				<!--************************* content ******************************-->
+
+
+				<!--************************* footer ******************************-->
+
+<div id="fulFooter" style="margin-top:-14px">
+<div id="footerBack"></div>
+        <div id="footer" >
+	    <div class="shell" style="height:200px">
+	      <div id="orangeLine2" >
+		<div id="paras">
+               		<p>© All Rights Reserved by</p>
+			<img src="images/footerlogo.png"/>
+			<p>Company 2012</p>
+           	</div>
+	     <table style="margin-right:90px;">
+                <row>
+                     <td><a href="#">Home</a></td>
+                     <td><a href="#" style="border-left:1px solid black;border-right:1px solid black;">Profile</a></td>
+                     <td><a href="#">Sign Out</a></td>
+                 </row>
+            </table>
+  	      </div><!--end of orangeLine-->
+	    </div><!--end of shell div -->
+
+
+	</div><!--end of footer-->
+</div><!--end of fulFooter-->
+
+
+				<!--************************* footer ******************************-->
+    </div><!--end of main-->
+</body>
+</html>

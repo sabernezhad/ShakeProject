@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <link rel=Stylesheet href=master.css type="text/css" />
+    <link rel=Stylesheet href=css.css type="text/css" />
+ 
+    <link rel=Stylesheet href=tables.css type="text/css" />
+  
+    <script type="text/javascript" src=jquery.js></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			$('#chat-comment').hide();
+			
+			$('#signouttab').hover(
+			function(){$('#hometab').css('z-index','0').css;$(this).css('z-index','10').css('background-color','#EFF809');}
+			,function(){$('#hometab').css('z-index','2');$(this).css('z-index','0').css('background-color','#C6E132');}
+			);
+			$('#profiletab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','1').css('background-color','#C6E132');}
+			);
+			$('#hometab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','2').css('background-color','#C6E132');}
+			);
+		
+		});
+	</script>
+
+</head>
+<body>
+
+    <div id="main">
+	<div id="headerBack" ></div>
+        <div id="header"  >
+		
+	  <div class="shell" style="height:400px">
+ 	    <div id="tabs" style="margin-bottom:-100px;margin-right:-30px">
+                <div id="signouttab">
+                    <p>Sign Out</p>
+                </div>
+                
+                <div id="profiletab">
+                    <p>Profile</p>
+                </div>
+                <div id="hometab">
+                    <p>Home</p>
+                </div>
+             </div><!--end of tabs-->
+
+	    <div id="orangeLine">
+                <div id="logo"></div>
+
+            	<div id="header-search">
+                	<img src="images/search-corner.png" id="header-search-corner">
+               
+                	<input type=text id="header-search-text" value="Enter Search Here..." />
+                
+                	<img src="images/btn-search.png" title="Search" id="header-search-button">
+            	</div>
+           
+	     </div><!--end of orange line-->
+	   </div><!--end of shell div -->
+
+        </div><!--end of header-->
+
+	 <div   style="clear:both"></div>
+
+	<div id="panelss" class="shell">
+                 <div id="item1Panel" class="panel" style="background-image:url('images/panel-b.png');top:80px;"> <a href="#"><img style="margin-left:41px;margin-top:-15px;" src="images/messageBox.png" title="Message Box"/> </a></div>
+        <div id="item2Panel" class="panel" style="background-image:url('images/panel-r.png');top:100px;"> <a href="#"><img style="margin-left:39px;margin-top:-15px;" src="images/friends.png" title="Friends" /> </a> </div>
+        <div id="item3Panel" class="panel" style="background-image:url('images/panel-b.png');top:120px;"> <a href=""><img style="margin-left:42px;margin-top:-15px;" src="images/archive.png" title="Archive" /> </a></div>
+        <div id="item4Panel" class="panel" style="background-image:url('images/panel-r.png');top:140px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/forum.png" title="Forum" /> </a></div>
+	<div id="item5Panel" class="panel" style="background-image:url('images/panel-b.png');top:160px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/setting.png" title="Setting" />  </a></div>
+	</div> <!--end of panelss-->
+ <div style="clear:both"></div>  
+
+	 <div id="content" class="shell">
+
+
+
+         <div id="profile-avatar" src="images/profile-avatar.jpg" alt="Profile Picture" ></div>
+           <img id="edit-coverPhoto" src="images/edit-icon.png" title="change photo" />
+	 <div id="PersonInfo">
+                <div id="PersonInfo-ID">FName LName</div>
+                <div id="PersonInfo-Status">
+                    <img id="PersonInfo-Status-Picture" src="images/PersonInfo-pic.png" />
+                    <div id="PersonInfo-Status-Text">Employee</div>
+                </div>
+         </div>
+
+
+            <div id="share-chat">
+                 
+                    <img id="avatar"  src="images/avatar.png" />
+
+               <img id="edit-Photo" src="images/edit-icon.png" title="change photo" />
+
+                 
+                    <div id="Info1">
+
+                   		
+				<div id="seprator">
+                    		</div>
+		    </div>
+
+                    
+
+		<!--****************************************-->
+ 		
+
+		<!--****************************************-->
+                
+            </div><!--end of share-chat-->
+
+
+		<div id="Informations">
+
+
+              <table id="Employee-table1" class=table>
+                <tr>
+                    <td>FIRST NAME :</td>
+                    <td><input readonly="readonly" type=text id="FirstNameField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>LAST NAME :</td>
+                    <td><input readonly="readonly" type=text id="LastNameField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>BIRTHDAY :</td>
+                    <td><input readonly="readonly" type=text id="BirthdayField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>GENDER :</td>
+                    <td>
+                    <input type=text readonly="readonly" id="gender2" class=TextBox>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>TEL :</td>
+                    <td><input type=text readonly="readonly" id="TelField" class=TextBox /></td>
+                </tr>
+
+		</table>
+
+		<table id="Employee-table2" class=table>
+		 <tr>
+                    <td>JOB :</td>
+                    <td><input type=text readonly="readonly" id="jobField" class=TextBox /></td>
+            
+                </tr>
+         	 <tr>
+                    <td>EMAIL :</td>
+                    <td><input type=text readonly="readonly" id="EmailField" class=TextBox /></td>
+                </tr>
+                <tr>
+                    <td>ORGANIZATION :</td>
+                    <td><input type=text readonly="readonly" id="OrgField" class=TextBox /></td>
+                </tr>
+               
+                <tr >
+                    <td>ORGANIZATION's CITY:</td>
+                    <td><input type=text readonly="readonly" id="Org-cityField" class=TextBox /></td>
+                </tr>
+		
+             </table>
+	</div>	<!--end of Informations-->
+
+		       <div id="Info2">
+
+                   		
+				<div id="seprator">
+                    		</div>
+		    </div>
+		
+
+        </div><!--end of content-->
+	
+
+<div id="fulFooter" style="margin-top:-14px">
+<div id="footerBack"></div>
+        <div id="footer" >
+	    <div class="shell" style="height:200px">
+	      <div id="orangeLine2" >
+		<div id="paras">
+               		<p>© All Rights Reserved by</p>
+			<img src="images/footerlogo.png"/>
+			<p>Company 2012</p>
+           	</div>
+	         <table style="margin-right:90px;">
+                <row>
+                     <td><a href="#">Home</a></td>
+                     <td><a href="#" style="border-left:1px solid black;border-right:1px solid black;">Profile</a></td>
+                     <td><a href="#">Sign Out</a></td>
+                 </row>
+            	</table>
+  	      </div><!--end of orangeLine-->
+	    </div><!--end of shell div -->
+
+
+	</div><!--end of footer-->
+</div><!--end of fulFooter-->
+    </div><!--end of main-->
+</body>
+</html>

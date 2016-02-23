@@ -1,0 +1,390 @@
+﻿
+	/***************************** fonts ******************************/
+
+@font-face
+{
+    font-family:TableFont;
+    src:url('fonts/SHOWG.ttf');
+    
+}
+@font-face
+{
+    font-family:TitleFont;
+    src:url('fonts/BRLNSDB.ttf');
+}
+@font-face
+{
+    font-family:FooterMenu;
+    src:url("fonts/stylo_.ttf");
+}
+
+@font-face
+{
+    font-family:Footer;
+    src:url("fonts/ARLRDBD.ttf");
+}
+@font-face
+{
+    font-family:About;
+    src:url("fonts/times.ttf");
+}
+@font-face
+{
+    font-family:comic;
+    src:url("fonts/comic.ttf");
+}
+
+	/***************************** body ******************************/
+
+
+body
+{
+    background-color:#798086;
+}
+#content
+{
+ 	margin-top:-560px;
+
+    overflow:auto
+}
+.shell{
+ 	width: 884px;
+ 	margin: 0 auto;
+ 	background: url(images/body.png) repeat-y 0 0;
+ 	padding: 0 57px 0 57px;
+ 	position: relative;
+}
+#orangeLine{
+
+	background: url(images/header.png) no-repeat; 
+	background-position: center center;
+	width: 840px;
+	padding: 60px 20px 0px 13px;
+	z-index:3;
+
+}
+
+	/***************************** panels ******************************/
+.panel
+{
+
+    position:relative;
+    width:180px;
+    height:76px;    
+    background-color:transparent;
+    z-index:2;
+    left:-340px;   
+    cursor:pointer;
+}
+
+	/***************************** main ******************************/
+#main
+{
+    margin:0 auto;
+    overflow:hidden;
+}
+
+	/***************************** header ******************************/
+
+#header
+{
+margin-top:-153px;
+	
+}
+#headerBack{
+ 	background: url(images/background.png) repeat-x;
+	
+ 	height: 100px;
+	margin-top:30px;
+ 	
+ 	z-index: 0;
+}
+
+#header div
+{
+    height:111px;
+}
+
+
+#logo
+{
+    background-image:url("images/logo.png");
+    float:left;
+	width:180px;
+	height:90px;
+	margin-left:80px;
+	margin-top:-29px;
+}
+#header-search
+{
+    position:relative;
+    top:9px;
+	float : right;
+	right:110px;
+    height:24px;
+}
+#header-search-corner
+{
+    float:left;
+    width:18px;
+    height:24px;
+    background-color:Black;
+    position:relative;
+    top:0px;
+    left:2px;
+}
+#header-search-button
+{
+    float:left;
+    width:34px;
+    height:27px;
+    background-color:black;
+    cursor:pointer;
+    position:relative;
+    top:-2px;
+    left:-4px;
+    z-index:4;
+}
+#header-search-text
+{
+	font-family:About;
+	font-style:italic;
+    float:left;
+    background-color:#010101;
+    color:Yellow;
+    font-style:italic;
+	height:22px;
+	border:1px;
+}
+#header-search-top-bound
+{
+    height:2px;
+    position:relative;
+    top:2px;
+    left:-190px;
+    width:190px;
+    background-color:#010101;
+}
+#header-search-down-bound
+{
+    height:2px;
+    position:relative;
+    width:190px;
+    top:23px;
+    left:-225px;
+    z-index:2;
+    background-color:#010101;
+}
+
+	/***************************** footer ******************************/
+
+#footerBack{
+ 	background: url(images/background.png) repeat-x;
+	background-position: top center;
+ 	height: 80px;
+ 	margin-top:10px;
+ 	z-index: 0;
+}
+#footer
+{
+    	font-family:Footer;
+	font-size:15px;
+	color:#1f1f1f;
+    height:100px;
+	margin-top:-76px;
+    clear:both;
+	z-index:2;
+}
+#footer p
+{
+
+    float:left;
+    margin-top:-35px;
+}
+#footer img
+{
+    float:left;
+    margin-top:-47px;
+}
+#paras{
+	float:left;
+	margin-left:40px;
+
+}
+#footer ul li
+{
+
+	text-align:center;
+    display:block;
+    list-style-type:none;
+    float:right;
+    width:60px;
+    margin-top:-34px;
+
+}
+#footer li a
+{
+
+   display:block;
+   text-decoration:none; 
+   width:60px;
+   color:Black;
+}
+#orangeLine2 table
+{
+    text-align:center;
+    float:right;
+    margin-top:-40px;
+}
+#orangeLine2 table a
+{
+   display:block;
+   text-decoration:none; 
+   width:70px;
+	color:#1f1f1f;
+}
+#orangeLine2{
+
+	background: url(images/header.png) no-repeat; 
+	background-position: bottom top;
+	width: 840px;
+	height:100px;
+	margin-left:12px;
+	padding: 60px 20px 0px 13px;
+	z-index:3;
+
+}
+
+
+	/***************************** tabs ******************************/
+
+#tabs div
+{
+	
+   width:109px;
+   height:27px; 
+   float:right;
+   border-top:2px solid #e0e0e0;
+   border-right:2px solid #e0e0e0;
+   border-left:2px solid #e0e0e0;
+   border-top-left-radius:30px;
+   border-top-right-radius:30px;
+   background-color:#c6e132;
+   position:relative;
+   top:41px;
+   text-align:center;
+   cursor:pointer;
+
+	z-index:0;
+	
+}
+#tabs p{
+	color:#798086;
+	font-family:comic;
+	font-size:16px;
+	margin-top:2px;
+}
+#tabs #hometab
+{
+   z-index:2;   
+   right:100px;
+}
+#tabs #profiletab
+{
+    z-index:1;
+    right:120px;
+} 
+#tabs #signouttab
+{
+    z-index:0;
+    right:140px;
+}
+
+		/**********Profile*******/
+
+#profile-avatar
+{
+    width:800px;
+    height:460px;
+    position:relative;
+    left:35px;
+    top:10px;
+    z-index:0;
+    border:3px solid white;
+    border-radius:5px;
+	background-color:#c7cdd2;
+    /***background-image:url('images/profile-avatar.jpg');***/
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
+    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, .5);
+
+}
+#edit-coverPhoto{
+	float:right;
+	width:30px;
+	height:30px;
+	margin-top:-27px;
+	margin-right:55px;
+	z-index:4;
+	position:relative;
+	cursor:pointer;
+
+}
+#PersonInfo
+{
+    width:314px;
+    height:94px;
+    position:relative;
+    float:right;
+	margin-right:-110px;
+    top:20px;
+}
+#PersonInfo-ID
+{
+  font-family:TitleFont;
+    color:#ff9000;
+    font-size:29px;
+}
+#PersonInfo-edit
+{
+	cursor:pointer;
+	position:relative;
+	z-index:4;
+	float:right;
+	width:25px;
+	height:25px;
+	
+	margin-right:200px;
+	margin-top:-15px;
+	
+}
+#PersonInfo-Status
+{
+    position:relative;
+	
+	
+}
+#PersonInfo-MoreInfo
+{
+	  font-family:TitleFont;
+	font-size:18px;
+    clear:both;
+    font-weight:bolder;
+    cursor:pointer;
+    position:relative;
+    top:10px;
+}
+#PersonInfo-Status-Picture
+{
+    position:relative;
+    float:left;
+}
+
+#PersonInfo-Status-Text
+{
+
+    position:relative;
+    float:left;
+    top:4px;
+color:#61676c;
+	margin-left:5px;
+}

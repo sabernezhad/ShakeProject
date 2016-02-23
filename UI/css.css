@@ -1,0 +1,604 @@
+@font-face
+{
+    font-family:TableFont;
+    src:url('fonts/SHOWG.TTF');
+    
+}
+@font-face
+{
+    font-family:TitleFont;
+    src:url('fonts/BRLNSDB.TTF');
+}
+@font-face
+{
+    font-family:FooterMenu;
+    src:url("fonts/stylo_.ttf");
+}
+
+@font-face
+{
+    font-family:Footer;
+    src:url("fonts/ARLRDBD.TTF");
+}
+@font-face
+{
+    font-family:About;
+    src:url("fonts/times.ttf");
+}
+
+#navigation-blob
+{
+	background-color: #c2e404;
+	color: #f7fbde;
+	box-shadow : -1px -1px 5px #888888;
+}
+.TextBox
+{
+    color:White;
+    background-color:#676d72;
+}
+.DivBorder
+{
+    border-top-style:dashed;
+    border-top-width:thin;
+}
+.table
+{
+    text-align:right;
+    font-family:TableFont;
+    color:#676d72;
+}
+td
+{
+    padding:5px;
+}
+
+
+
+body
+{
+	background-color:#62676c;
+
+}
+
+}
+#bodyImg{
+
+}
+
+    /*shift */
+#shift
+{
+
+    background-image:url("images/shift.jpg");
+    width:128px;
+    height:61px;
+    float:right;
+    font-family:TitleFont;
+    font-size:larger;
+    margin-top:70px;
+	margin-left:60px;
+}
+#shift2
+{
+
+    background-image:url("images/shift.jpg");
+    width:128px;
+    height:61px;
+    float:right;
+    font-family:TitleFont;
+    font-size:larger;
+    margin-top:35px;
+	margin-right:130px;
+}
+
+#shift2 a
+{
+    position:relative;
+    top:15px;
+    left:30px;
+    color:#ff9000;
+    text-shadow:1px 1px 1px white;
+}
+#shift a
+{
+    position:relative;
+    top:15px;
+    left:30px;
+    color:#ff9000;
+    text-shadow:1px 1px 1px white;
+}
+#shiftE
+{
+
+    background-image:url("images/shift.jpg");
+    width:128px;
+    height:61px;
+    float:right;
+    font-family:TitleFont;
+    font-size:larger;
+    margin-top:45px;
+    margin-right:200px;
+}
+#shiftE a
+{
+    position:relative;
+    top:15px;
+    left:30px;
+    color:#ff9000;
+    text-shadow:1px 1px 1px white;
+}
+#tableBottom{
+	float:right;
+}
+h1
+{
+  font-family:TitleFont;  
+  font-size:30px;
+  color:#333333;
+}
+#logo
+{
+    width:247px;
+    height:104px;
+    float:left;
+	margin-left:60px;
+}
+
+#menu
+{
+    float:right;
+    margin-top:10px;
+    
+}
+#menu li
+{
+    width:130px;
+    height:32px;
+}
+#menu li a
+{
+    width:111px;
+    height:32px; 
+    font-family:FooterMenu;
+    font-weight:bold;
+    color:#b9da03;
+    text-align:center;
+    line-height:30px;
+}
+ul li
+{
+     display:block;
+     float:left;
+}
+a
+{
+    text-decoration:none;
+    text-align:center;
+}
+ul li a
+{
+    border-radius:10px;
+    border-width:0px;
+    text-align:center;
+    display:block;
+}
+.box
+{
+	display: inline-table;
+    height:305px;
+    margin-top:40px;
+    border-radius:15px;
+    background-color:White;
+    box-shadow:3px 3px 30px black ;
+}
+#header
+{
+    height:110px;
+    top:0px;
+    left:0px;
+    right:0px;
+    position:absolute;
+    background-image:url("images/header.png");
+    background-repeat:repeat-x;
+    clear:both;
+}
+#body
+{
+    width:1059px;
+    margin:0 auto;
+    margin-top:110px;
+    clear:both;
+}
+#usertypeselect{
+	width:147px;
+}
+
+
+
+
+
+#footer
+{
+    background-image:url("images/footer.png");
+    background-repeat:repeat-x;
+position: absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:80px;
+
+}
+
+#footer li
+{
+    width:80px;
+
+    border-bottom:1px solid #c5bdbd;
+}
+#footer li a
+{
+    font-family:FooterMenu;
+    width:70px;
+    color:#faf32e;
+    font-size:small;
+}
+
+
+#footer-content
+{
+    position:absolute;
+    bottom:0px;
+    left:510px;
+}
+#footer-content p
+{
+    font-family:Footer;
+	margin-top:0px;
+    font-size:13px;
+    position:relative;
+    left:45px;
+}
+#FooterMenu{
+
+	margin-bottom:0px;
+
+}
+#box
+{
+    width:1050px;
+    height:350px;
+    margin:0 auto;
+    position:relative;
+    top:35px;
+}
+#gender
+{
+    width:147px;
+    color:White;
+    background-color:#676d72;
+}
+
+
+/* tables properties 1*/
+#table1
+{
+    margin-top:20px;
+    margin-left:60px;
+    float:left;
+    
+}
+#table2
+{
+    position:relative;
+    top:30px;
+	margin-left:20px;
+    float:left;
+}
+#ContentBox
+{
+    position:relative;
+    top:0px;
+    left:70px;
+
+    color:Gray;    
+    width:900px;
+}
+
+#title
+{
+    position:relative;
+    top:10px;
+    left:70px;
+    color:#686d71;
+}
+/* tables properties 2*/
+
+#table1EmployerRegistrationFinish
+{
+    position:relative;
+    top:20px;
+    margin-left:-20px;
+    float:left;
+    
+}
+#table2EmployerRegistrationFinish
+{
+    position:relative;
+    top:20px;
+    float:right;
+}
+#table2EmployerRegistrationFinish td
+{
+    text-align:right;
+}
+#ContentBoxEmployerRegistrationFinish
+{
+    position:relative;
+    top:0px;
+    left:100px;
+
+    color:Gray;    
+    width:900px;
+}
+#titleEmployerRegistrationFinish
+{
+    position:relative;
+    top:10px;
+    left:70px;
+    color:#686d71;
+}
+#OrgTypeEmployerRegistrationFinish
+{
+    width:147px;
+}
+#OrgLocField{
+	width:141px;
+	Height:55px;
+}
+
+
+
+/* tables properties 3*/
+
+#table1EmployerRegistration
+{
+    position:relative;
+    top:-5px;
+    margin-left:200px;
+    float:left;    
+}
+
+#ContentBoxEmployerRegistration
+{
+    position:relative;
+    top:30px;
+    left:70px;
+
+    color:Gray;    
+    width:900px;
+}
+/* tables properties 4*/
+
+#table1lookingforjobfinish
+{
+    position:relative;
+    top:0px;
+    margin-left:150px;
+    float:left;    
+}
+
+#ContentBoxlookingforjobfinish
+{
+    position:relative;
+    top:20px;
+    left:160px;
+
+    color:Gray;    
+    width:900px;
+}
+#titlelookingforjobfinish
+{
+    position:relative;
+    top:10px;
+    left:70px;
+    color:#686d71;
+}
+#uploadlookingforjobfinish
+{
+    cursor:pointer;
+}
+#educationlookingforjobfinish
+{
+    width:148px;
+}
+#ProfField{
+	width:141px;
+}
+/* tables properties 5*/
+#table1lookingforjob
+{
+    margin-top:20px;
+    margin-left:60px;
+    float:left;
+    
+}
+#table2lookingforjob
+{
+    position:relative;
+    top:20px;
+    float:right;
+}
+#ContentBoxlookingforjob
+{
+    position:relative;
+    top:0px;
+    left:70px;
+
+    color:Gray;    
+    width:900px;
+}
+#titlelookingforjob
+{
+    position:relative;
+    top:10px;
+    left:70px;
+    color:#686d71;
+}
+/* For Login Page */
+.table
+{
+
+    text-align:right;
+    font-family:TableFont;
+    color:#676d72;
+}
+#shiftlogin
+{
+    background-image:url("images/shift.jpg");
+    width:128px;
+    height:61px;
+    float:right;
+    margin-right:43px;
+    margin-top:45px;
+    font-family:TitleFont;
+    font-size:larger;
+}
+#shiftlogin a
+{
+    position:relative;
+    top:-5px;
+    left:16px;
+    color:#ff9000;
+    text-shadow:1px 1px 1px white;
+}
+
+#Send
+{
+    background-image:url("images/shift.jpg");
+    width:128px;
+    height:61px;
+    float:right;
+    margin-right:200px;
+    margin-top:45px;
+    font-family:TitleFont;
+    font-size:larger;
+}
+#Send a
+{
+    position:relative;
+    top:-5px;
+    left:35px;
+    color:#ff9000;
+    text-shadow:1px 1px 1px white;
+}
+#loginTable{
+
+	padding-top:18px;
+}
+#signin{
+
+	padding-top:0px;
+	margin-top: -5px;
+}
+
+#LoginPic
+{
+
+    background-image:url("images/signin.png");
+    background-color:Transparent;
+    height:43px;
+    width:98px;
+	margin-top:2px;
+}
+#display{
+	height: 25px;
+	color: red;
+    font-weight: bold;
+ font-family:FooterMenu;
+font-size: 17px;
+}
+#displayRegister
+{
+	color:red;
+}
+#LoginPic a
+{
+    text-shadow:1px 1px 1px white;
+    font-family:TitleFont;
+    font-size:larger;
+    color:#ff9000;
+    position:relative;
+	top:5px;
+    left:20px;
+    
+}
+
+#signup h1
+{
+    margin-left:50px;
+}
+#SignC{
+	padding-top:10px;
+}
+#signup
+{
+
+    width:635px;
+    float:left;
+}
+#signup table
+{
+    margin-left:70px;
+}
+#remember{
+	margin-right:7px;
+	margin-top:5px;
+}
+#forgetpass{
+	margin-left:4px;
+}
+#login
+{
+    width:335px;
+    float:right;
+}
+#login table
+{
+    margin:0 auto;
+}
+#login h1
+{
+    margin-left:37px;
+}
+#AboutP{
+	font-family:About;  
+	font-size:20px;
+	color:#333333;
+	margin-left:200px;
+	margin-right:200px;
+	float:left;
+	margin-top:-30px;
+}
+#a1{
+	
+}
+#a2{
+	margin-top:-10px;
+	font-size:30px;
+	
+}
+#a3{
+	margin-top:-20px;
+}
+#a4{
+	margin-top:-20px;
+	font-size:25px;
+	color:#79b42c;
+}
+.HelpH{
+ 	float:left;margin-left:90px;margin-top:-15px;color:#79b42c;
+}
+.HelpP{
+	float:left;margin-left:110px;margin-top:-10px;color:#333333;
+}

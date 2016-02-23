@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <link rel=Stylesheet href=master.css type="text/css" />
+    <link rel=Stylesheet href=css.css type="text/css" />
+ 
+    <link rel=Stylesheet href=friends.css type="text/css" />
+   <link rel=Stylesheet href=chat.css type="text/css" />
+    <link rel=Stylesheet href=share-chat.css type="text/css" />
+    <script type="text/javascript" src=jquery.js></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			$('#chat-comment').hide();
+			
+			$('#signouttab').hover(
+			function(){$('#hometab').css('z-index','0').css;$(this).css('z-index','10').css('background-color','#EFF809');}
+			,function(){$('#hometab').css('z-index','2');$(this).css('z-index','0').css('background-color','#C6E132');}
+			);
+			$('#profiletab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','1').css('background-color','#C6E132');}
+			);
+			$('#hometab').hover(
+			function(){$('#hometab').css('z-index','0');$(this).css('z-index','10').css('background-color','#EFF809');},
+			function(){$('#hometab').css('z-index','2');$(this).css('z-index','2').css('background-color','#C6E132');}
+			);
+		
+		});
+	</script>
+
+</head>
+<body>
+
+    <div id="main">
+	<div id="headerBack" ></div>
+        <div id="header"  >
+		
+	  <div class="shell" style="height:400px">
+ 	    <div id="tabs" style="margin-bottom:-100px;margin-right:-30px">
+                <div id="signouttab">
+                    <p>Sign Out</p>
+                </div>
+                
+                <div id="profiletab">
+                    <p>Profile</p>
+                </div>
+                <div id="hometab">
+                    <p>Home</p>
+                </div>
+             </div><!--end of tabs-->
+
+	    <div id="orangeLine">
+                <div id="logo"></div>
+
+            	<div id="header-search">
+                	<img src="images/search-corner.png" id="header-search-corner">
+               
+                	<input type=text id="header-search-text" value="Enter Search Here..." />
+                
+                	<img src="images/btn-search.png" title="Search" id="header-search-button">
+            	</div>
+           
+	     </div><!--end of orange line-->
+	   </div><!--end of shell div -->
+
+        </div><!--end of header-->
+
+	 <div   style="clear:both"></div>
+
+	<div id="panelss" class="shell">
+               <div id="item1Panel" class="panel" style="background-image:url('images/panel-b.png');top:80px;"> <a href="#"><img style="margin-left:41px;margin-top:-15px;" src="images/messageBox.png" title="Message Box"/> </a></div>
+        <div id="item2Panel" class="panel" style="background-image:url('images/panel-r.png');top:100px;"> <a href="#"><img style="margin-left:39px;margin-top:-15px;" src="images/friends.png" title="Friends" /> </a> </div>
+        <div id="item3Panel" class="panel" style="background-image:url('images/panel-b.png');top:120px;"> <a href=""><img style="margin-left:42px;margin-top:-15px;" src="images/archive.png" title="Archive" /> </a></div>
+        <div id="item4Panel" class="panel" style="background-image:url('images/panel-r.png');top:140px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/forum.png" title="Forum" /> </a></div>
+	<div id="item5Panel" class="panel" style="background-image:url('images/panel-b.png');top:160px;"> <a href=""><img style="margin-left:45px;margin-top:-15px;" src="images/setting.png" title="Setting" />  </a></div>
+ 	</div> <!--end of panelss-->
+ <div style="clear:both"></div>  
+
+	 <div id="content" class="shell">
+
+            <div id="share-chat">
+                   
+
+		<!--****************************************-->
+ 		<div id="recent-post">
+                        <div id="post">
+                            <div id="chat" class=border-out>
+                                
+  					
+			
+                                <div id="chat-body" class=border-in>
+					<div id="messageBox-ID">
+					 <h1 id="personID">
+                        			New Message
+                    			</h1>
+
+                    			<img id="avatar"  src="images/avatar.png" />
+					</div><!--end of messageBox-ID -->
+				 
+                          	<table id="message-table">
+				<tr>
+					<td>Subject :</td>
+					<td><input class=ReportTxt type=text id="SubjectField" /></td>
+				</tr>
+				<tr>
+					<td>To :</td>
+					<td><input class=ReportTxt type=text id="ToField" /></td>
+				</tr>
+				
+				<tr>
+					<td>Message :</td>
+					
+					<td><textarea id="messageField" rows=3 cols=20 class=ReportTxt style="position:relative;"></textarea></td>
+				</tr>
+				</table>
+
+					
+                                 
+                                  
+                        	</div><!--end of chat-body-->
+
+				
+                     	   </div><!--end of chat-->
+			</div><!--end of post-->
+
+			
+				<div id="send-report">
+				<a style="text-decoration:none;" href="#">
+					<div id="report-btn" class="orangebtn" >
+						<p> Send </p>
+						<img src="images/send-comment.png"/>
+					</div>
+				</a>
+                                    
+                                </div> <!--end of send report-->
+			
+		     </div><!--end of recent-post-->
+
+	<div id="inbox-block" >
+                    <div id="Inboxsep">
+				  <img src="images/left.png" alt="shift" title="Back" style="cursor:pointer;float:left;margin-left:40px;" />
+
+                  	  <div style="margin-left:0px;float:left;margin-top:10px;">
+				  <a href="#" style="text-decoration:none" > <b><span style="color:#b0ce08 ; margin-left:10px;">Back to Message Box  </span></b></a>
+			    </div>
+
+                 	 
+                    </div>
+
+
+                    <div id="seprator">
+                    </div>
+
+		<div id="recieved-message" >
+			
+
+	
+				
+			<div id="Rpost"  class="RpostS">
+
+		      <div id="sendPost" class="border-out">
+                        <div id="sendPost-background" class="border-in">
+                            <div id="sendPost-body">
+
+				<div id="senderHeader">
+
+				<img id="sender-photo"  src="images/avatar.png" />
+				<div id="sender-info">
+                                  <div id="SenderName" ><p>FName LName</p></div>
+				  <div id="SenderType" ><p>Employee</p></div>
+				  <div id="messageTitle" ><p>Messeage Title</p></div>
+				</div>
+
+				</div><!--end of sender-Header-->
+				<div id="txts" >
+				
+					<textarea id="sendmField" rows=1 cols=20 class=messageTxt style="position:relative;"> Enter your message ...</textarea>
+
+				</div>
+
+				
+
+				<div id="delete2">
+				<a style="text-decoration:none;" href="#">
+					<div id="delete-btn" class="orangebtn" >
+						<p> Delete </p>
+						<img src="images/cancel-comment.png"/>
+					</div>
+				</a>
+                                    
+                                </div> <!--end of delete-->
+
+				
+                            </div><!--end of replyPost-body-->
+                         </div><!--end of replyPost-back-->
+                    </div><!--end of replyPost-->
+
+
+		
+				<div style="clear:both"></div>
+
+			</div><!--end of Rpost-->
+
+
+			
+		  </div><!--end of recieved-message-->
+
+
+             
+	</div><!--end of inbox-block-->
+
+	<!--************************-->
+
+
+	
+	
+
+		<!--****************************************-->
+                
+            </div><!--end of share-chat--> 
+
+            <div id="friends-list" class=border-out>
+                <div id="friendsbody" class=border-in>
+			<h2 >Friends</h2></tr>
+                    <table id="friends-table" class="tables" style="margin-top:-35px;">      
+                        <tr>
+                            <td>
+                                <img />
+                            </td>
+                            <td>
+                                 <p>friend1</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img  />
+                            </td>
+                            <td>
+                                <p>friend2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img  />
+                            </td>
+                            <td>
+                                <p>friend3</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img  />
+                            </td>
+                            <td>
+                                <p>friend4</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img />
+                            </td>
+                            <td>
+                                <p>friend5</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img />
+                            </td>
+                            <td>
+                                <p>friend6</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img />
+                            </td>
+                            <td>
+                                <p>friend7</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!--end of friends body-->
+                <div id="chat-menu" class=Menus>
+                    <div id="friends-count"><a  style="text-decoration:none ; color:gray" href="#" >See all <span id="numOfFriends" style="color:#ff9000" > 4 </span> friends</a></div>
+                </div>
+                
+            </div><!--end of friends list-->
+
+            <div id="chat-list" class="border-out">
+                <div id="chatbody" class="border-in">
+				<h3 >Online friends</h3></tr>
+                    <table id="chat-table" class="tables">   
+		
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend1</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend3</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend4</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend5</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend6</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src=images/shape.png />
+                            </td>
+                            <td>
+                                <p>friend7</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!--end of chat body -->
+
+                <div id="chatmenu2" class="Menus">
+
+			<img id="shape" src="images/shape.png" title="Comment" />
+			<div id="PersonName" >FName</div>
+                        <a href="#"> <img id="setting" src="images/settingIcon.png" title="Block" />
+                        </a>   	
+         
+                </div>
+            </div><!--end of chatlist-->
+
+        </div><!--end of content-->
+	
+
+<div id="fulFooter" style="margin-top:-14px">
+<div id="footerBack"></div>
+        <div id="footer" >
+	    <div class="shell" style="height:200px">
+	      <div id="orangeLine2" >
+		<div id="paras">
+               		<p>© All Rights Reserved by</p>
+			<img src="images/footerlogo.png"/>
+			<p>Company 2012</p>
+           	</div>
+	        <table style="margin-right:90px;">
+                <row>
+                     <td><a href="#">Home</a></td>
+                     <td><a href="#" style="border-left:1px solid black;border-right:1px solid black;">Profile</a></td>
+                     <td><a href="#">Sign Out</a></td>
+                 </row>
+            </table>
+  	      </div><!--end of orangeLine-->
+	    </div><!--end of shell div -->
+
+
+	</div><!--end of footer-->
+</div><!--end of fulFooter-->
+    </div><!--end of main-->
+</body>
+</html>

@@ -1,0 +1,268 @@
+﻿
+@font-face
+{
+    font-family:TableFont;
+    src:url('fonts/SHOWG.ttf');
+    
+}
+@font-face
+{
+    font-family:TitleFont;
+    src:url('fonts/BRLNSDB.ttf');
+}
+@font-face
+{
+    font-family:FooterMenu;
+    src:url("fonts/stylo_.ttf");
+}
+
+@font-face
+{
+    font-family:Footer;
+    src:url("fonts/ARLRDBD.ttf");
+}
+@font-face
+{
+    font-family:About;
+    src:url("fonts/times.ttf");
+}
+
+@font-face
+{
+    font-family:comic;
+    src:url("fonts/comic.ttf");
+}
+
+@font-face
+{
+    font-family:btahoma;
+    src:url("fonts/BTAHMABD.ttf");
+}
+
+
+@font-face
+{
+    font-family:vijayab;
+    src:url("fonts/vijayab.ttf");
+}
+/**************/
+
+.TextBox{
+    color:White;
+    background-color:#676d72;
+
+}
+.table
+{
+    text-align:right;
+    font-family:comic;
+	font-size:15px;
+    color:#676d72;
+}
+/**************employee*********/
+#Informations{
+	height:150px;
+	margin-top:-50px;
+
+}
+#Employee-table1{
+
+	float:left;
+	margin-left:90px;
+	margin-top:70px;
+	margin-bottom:50px;
+}
+
+#Employee-table2{
+
+	float:right;
+	margin-right:110px;
+	margin-top:70px;
+}
+#gender{
+
+	width:170px;
+}
+/**************employee**********/
+
+/**********employer*********/
+#Informations2{
+	height:200px;
+	margin-top:-50px;
+	margin-left:-15px;
+}
+#Employer-table1{
+
+	float:left;
+	margin-left:60px;
+	margin-top:70px;
+margin-bottom:50px;
+}
+
+#Employer-table2{
+
+	float:right;
+	margin-right:60px;
+	margin-top:70px;
+}
+#Org-locField{
+	width:164px;
+	height:48px;
+
+}
+/*************looking for job ***********/
+#Informations3{
+	height:250px;
+	margin-top:-50px;
+	margin-left:-15px;
+}
+
+#looking-table1{
+
+	float:left;
+	margin-left:90px;
+	margin-top:70px;
+	margin-bottom:50px;
+}
+
+#looking-table2{
+
+	float:right;
+	margin-right:90px;
+	margin-top:70px;
+}
+#proField{
+	width:164px;
+	height:78px;
+
+}
+#uniField{
+	width:170px;
+}
+
+/***************looking for job *************/
+
+
+/***********employer********/
+
+
+#Org-typeField{
+
+	width:170px;
+}
+
+#share-chat
+{
+   width:545px;
+   float:left;
+   margin-top:-30px;
+   margin-left:30px;
+	z-index:4px;
+    
+}
+
+#avatar
+{
+	cursor:pointer;
+    position:relative;
+    width:130px;
+    height:154px;
+    top:-55px;
+    left:50px;
+    border:2px;
+    border-color:White;
+    border-radius:5px;
+    border-style:solid;
+    box-shadow:0.3px 0.3px 10px 1px gray;
+    z-index:4;
+    background-color:White;
+}
+
+
+/****************/
+
+#Info
+{
+    width:535px;
+    height:28px;
+    margin-top:-20px;
+	float:left;
+	margin-left:160px;
+}
+#Info1
+{
+    width:535px;
+    height:28px;
+    margin-top:-20px;
+	float:left;
+	margin-left:160px;
+}
+#Info2
+{
+    width:535px;
+    height:28px;
+    margin-top:-20px;
+	float:left;
+	margin-left:190px;
+	margin-bottom:100px;
+}
+#seprator
+{
+    height:9px;
+    width:430px;
+    background-image:url('images/seprator.png');
+    background-repeat:repeat-x;
+    border-radius:80px;
+    margin-left:25px;
+    margin-top:32px;
+}
+
+/**********************************/
+#morepost{
+	height:100px;
+	margin-top:370px;
+	margin-left:160px;
+}
+#greenBtn{
+
+	float:left;
+	cursor:pointer;
+	background-image:url('images/greenbtn.png');
+    width:130px;
+    height:40px;
+	margin-left:20px;
+
+}
+#greenBtn img{
+	width:25px;
+    	height:25px;
+	float:right;
+	margin-top:6px;
+margin-right:20px;
+}
+#greenBtn p{
+	font-family:comic;
+	color:#404447;
+	float:left;
+	margin-left:40px;
+	margin-top:7px;
+}
+.greenline{
+	width:130px;
+    height:9px;
+    background-image:url('images/seprator.png');
+    background-repeat:repeat-x;
+    border-radius:80px;
+}
+#leftLine{
+	float:left;
+	margin-left:60px;
+	margin-top:15px;
+
+}
+#rightLine{
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+}
+/**************/
